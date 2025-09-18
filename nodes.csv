@@ -1,4 +1,4 @@
-id:ID,name,type:LABEL,description,section_number
+id,name,type,description,section_number
 document,Home Inspection Standards of Practice,Document,"Home Inspection Standards of Practice - Last revised January 2018",
 def_scope,Definitions and Scope,Section,"Section defining home inspection scope and material defects",1
 limitations,Limitations Exceptions & Exclusions,Section,"Section outlining what inspections do not cover",2
@@ -26,4 +26,5 @@ inspect,Inspect,Term,"To examine readily accessible systems and components safel
 observe,Observe,Term,"To visually notice",
 operate,Operate,Term,"To cause systems to function or turn on with normal operating controls",
 evaluate,Evaluate,Term,"To assess the systems structures and/or components of a property",
+
 determine,Determine,Term,"To arrive at an opinion or conclusion pursuant to examination"
