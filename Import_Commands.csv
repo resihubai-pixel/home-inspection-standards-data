@@ -1,0 +1,62 @@
+// Neo4j Import Commands for Home Inspection Standards
+// Run these commands in order after uploading the CSV files to your Neo4j import directory
+
+// 1. Clear existing data (optional - be careful!)
+// MATCH (n) DETACH DELETE n;
+
+// 2. Create nodes from nodes CSV
+LOAD CSV WITH HEADERS FROM 'file:///nodes.csv' AS row
+CALL apoc.create.node([row.type], {
+  id: row.id,
+  name: row.name,
+  description: row.description,
+  section_number: row.section_number
+}) YIELD node
+RETURN count(node);
+
+// 3. Create requirements from requirements CSV
+LOAD CSV WITH HEADERS FROM 'file:///requirements.csv' AS row
+CALL apoc.create.node([row.category], {
+  id: row.id,
+  inspection_area: row.inspection_area,
+  requirement_type: row.requirement_type,
+  description: row.description
+}) YIELD node
+RETURN count(node);
+
+// 4. Create relationships from relationships CSV
+LOAD CSV WITH HEADERS FROM 'file:///relationships.csv' AS row
+MATCH (a {id: row.START_ID})
+MATCH (b {id: row.END_ID})
+CALL apoc.create.relationship(a, row.TYPE, {}, b) YIELD rel
+RETURN count(rel);
+
+// 5. Create indexes for better performance
+CREATE INDEX ON :Document(id);
+CREATE INDEX ON :Section(id);
+CREATE INDEX ON :InspectionArea(id);
+CREATE INDEX ON :Definition(id);
+CREATE INDEX ON :Term(id);
+CREATE INDEX ON :InspectionRequirement(id);
+CREATE INDEX ON :InspectionRequirement(requirement_type);
+
+// 6. Verify the import
+MATCH (n) RETURN labels(n) as NodeType, count(n) as Count;
+
+// 7. Sample queries to test the data
+
+// Find all inspection requirements for electrical systems
+MATCH (area:InspectionArea {id: 'electrical'})-[:HAS_REQUIREMENT]->(req:InspectionRequirement)
+RETURN area.name, req.requirement_type, req.description;
+
+// Find all "SHALL_INSPECT" requirements across all areas
+MATCH (area:InspectionArea)-[:HAS_REQUIREMENT]->(req:InspectionRequirement {requirement_type: 'SHALL_INSPECT'})
+RETURN area.name, req.description;
+
+// Find the document structure
+MATCH (doc:Document)-[:CONTAINS_SECTION]->(section:Section)-[:CONTAINS_AREA]->(area:InspectionArea)
+RETURN doc.name, section.name, area.name;
+
+// Find all terms defined in the glossary
+MATCH (glossary:Section {id: 'glossary'})-[:DEFINES_TERM]->(term:Term)
+RETURN term.name, term.description;

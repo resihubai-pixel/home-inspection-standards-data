@@ -1,0 +1,61 @@
+id:ID,inspection_area,requirement_type,description,category:LABEL
+roof_inspect_1,roof,SHALL_INSPECT,"the roof-covering materials",InspectionRequirement
+roof_inspect_2,roof,SHALL_INSPECT,"the gutters",InspectionRequirement
+roof_inspect_3,roof,SHALL_INSPECT,"the downspouts",InspectionRequirement
+roof_inspect_4,roof,SHALL_INSPECT,"the vents flashing skylights chimney and other roof penetrations",InspectionRequirement
+roof_inspect_5,roof,SHALL_INSPECT,"the general structure of the roof from readily accessible panels doors or stairs",InspectionRequirement
+roof_describe_1,roof,SHALL_DESCRIBE,"the type of roof-covering materials",InspectionRequirement
+roof_report_1,roof,SHALL_REPORT,"observed indications of active roof leaks",InspectionRequirement
+roof_not_req_1,roof,NOT_REQUIRED,"walk on any roof surface",InspectionRequirement
+roof_not_req_2,roof,NOT_REQUIRED,"predict the service life expectancy",InspectionRequirement
+roof_not_req_3,roof,NOT_REQUIRED,"inspect underground downspout diverter drainage pipes",InspectionRequirement
+exterior_inspect_1,exterior,SHALL_INSPECT,"the exterior wall-covering materials",InspectionRequirement
+exterior_inspect_2,exterior,SHALL_INSPECT,"the eaves soffits and fascia",InspectionRequirement
+exterior_inspect_3,exterior,SHALL_INSPECT,"a representative number of windows",InspectionRequirement
+exterior_inspect_4,exterior,SHALL_INSPECT,"all exterior doors",InspectionRequirement
+exterior_inspect_5,exterior,SHALL_INSPECT,"flashing and trim",InspectionRequirement
+exterior_describe_1,exterior,SHALL_DESCRIBE,"the type of exterior wall-covering materials",InspectionRequirement
+exterior_report_1,exterior,SHALL_REPORT,"any improper spacing between intermediate balusters spindles and rails",InspectionRequirement
+foundation_inspect_1,foundation,SHALL_INSPECT,"the foundation",InspectionRequirement
+foundation_inspect_2,foundation,SHALL_INSPECT,"the basement",InspectionRequirement
+foundation_inspect_3,foundation,SHALL_INSPECT,"the crawlspace",InspectionRequirement
+foundation_inspect_4,foundation,SHALL_INSPECT,"structural components",InspectionRequirement
+foundation_describe_1,foundation,SHALL_DESCRIBE,"the type of foundation",InspectionRequirement
+foundation_describe_2,foundation,SHALL_DESCRIBE,"the location of the access to the under-floor space",InspectionRequirement
+foundation_report_1,foundation,SHALL_REPORT,"observed indications of wood in contact with or near soil",InspectionRequirement
+foundation_report_2,foundation,SHALL_REPORT,"observed indications of active water penetration",InspectionRequirement
+foundation_report_3,foundation,SHALL_REPORT,"observed indications of possible foundation movement",InspectionRequirement
+heating_inspect_1,heating,SHALL_INSPECT,"the heating system using normal operating controls",InspectionRequirement
+heating_describe_1,heating,SHALL_DESCRIBE,"the location of the thermostat for the heating system",InspectionRequirement
+heating_describe_2,heating,SHALL_DESCRIBE,"the energy source",InspectionRequirement
+heating_describe_3,heating,SHALL_DESCRIBE,"the heating method",InspectionRequirement
+heating_report_1,heating,SHALL_REPORT,"any heating system that did not operate",InspectionRequirement
+heating_report_2,heating,SHALL_REPORT,"if the heating system was deemed inaccessible",InspectionRequirement
+cooling_inspect_1,cooling,SHALL_INSPECT,"the cooling system using normal operating controls",InspectionRequirement
+cooling_describe_1,cooling,SHALL_DESCRIBE,"the location of the thermostat for the cooling system",InspectionRequirement
+cooling_describe_2,cooling,SHALL_DESCRIBE,"the cooling method",InspectionRequirement
+cooling_report_1,cooling,SHALL_REPORT,"any cooling system that did not operate",InspectionRequirement
+cooling_report_2,cooling,SHALL_REPORT,"if the cooling system was deemed inaccessible",InspectionRequirement
+plumbing_inspect_1,plumbing,SHALL_INSPECT,"the main water supply shut-off valve",InspectionRequirement
+plumbing_inspect_2,plumbing,SHALL_INSPECT,"the main fuel supply shut-off valve",InspectionRequirement
+plumbing_inspect_3,plumbing,SHALL_INSPECT,"the water heating equipment including energy source venting connections TPR valves",InspectionRequirement
+plumbing_inspect_4,plumbing,SHALL_INSPECT,"interior water supply including all fixtures and faucets by running water",InspectionRequirement
+plumbing_describe_1,plumbing,SHALL_DESCRIBE,"whether the water supply is public or private based upon observed evidence",InspectionRequirement
+plumbing_describe_2,plumbing,SHALL_DESCRIBE,"the location of the main water supply shut-off valve",InspectionRequirement
+electrical_inspect_1,electrical,SHALL_INSPECT,"the service drop",InspectionRequirement
+electrical_inspect_2,electrical,SHALL_INSPECT,"the overhead service conductors and attachment point",InspectionRequirement
+electrical_inspect_3,electrical,SHALL_INSPECT,"the service head gooseneck and drip loops",InspectionRequirement
+electrical_inspect_4,electrical,SHALL_INSPECT,"panelboards and over-current protection devices",InspectionRequirement
+electrical_describe_1,electrical,SHALL_DESCRIBE,"the main service disconnect amperage rating if labeled",InspectionRequirement
+electrical_describe_2,electrical,SHALL_DESCRIBE,"the type of wiring observed",InspectionRequirement
+fireplace_inspect_1,fireplace,SHALL_INSPECT,"readily accessible and visible portions of fireplaces and chimneys",InspectionRequirement
+fireplace_inspect_2,fireplace,SHALL_INSPECT,"lintels above the fireplace openings",InspectionRequirement
+fireplace_describe_1,fireplace,SHALL_DESCRIBE,"the type of fireplace",InspectionRequirement
+attic_inspect_1,attic,SHALL_INSPECT,"insulation in unfinished spaces including attics crawlspaces foundation areas",InspectionRequirement
+attic_inspect_2,attic,SHALL_INSPECT,"ventilation of unfinished spaces including attics crawlspaces foundation areas",InspectionRequirement
+attic_describe_1,attic,SHALL_DESCRIBE,"the type of insulation observed",InspectionRequirement
+attic_describe_2,attic,SHALL_DESCRIBE,"approximate average depth of insulation observed at unfinished attic floor",InspectionRequirement
+interior_inspect_1,interior,SHALL_INSPECT,"a representative number of doors and windows by opening and closing them",InspectionRequirement
+interior_inspect_2,interior,SHALL_INSPECT,"floors walls and ceilings",InspectionRequirement
+interior_inspect_3,interior,SHALL_INSPECT,"stairs steps landings stairways and ramps",InspectionRequirement
+interior_describe_1,interior,SHALL_DESCRIBE,"a garage vehicle door as manually-operated or installed with garage door opener",InspectionRequirement
