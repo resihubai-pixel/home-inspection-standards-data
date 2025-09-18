@@ -1,30 +1,69 @@
-id,name,type,description,section_number
-document,Home Inspection Standards of Practice,Document,"Home Inspection Standards of Practice - Last revised January 2018",
-def_scope,Definitions and Scope,Section,"Section defining home inspection scope and material defects",1
-limitations,Limitations Exceptions & Exclusions,Section,"Section outlining what inspections do not cover",2
-standards,Standards of Practice,Section,"Section detailing specific inspection requirements by system",3
-glossary,Glossary of Terms,Section,"Section containing definitions of technical terms",4
-home_inspection_def,Home Inspection Definition,Definition,"A home inspection is a non-invasive visual examination of accessible areas",1.1
-material_defect_def,Material Defect Definition,Definition,"A specific issue that may have significant adverse impact on property value or poses unreasonable risk",1.2
-inspection_report_def,Inspection Report Definition,Definition,"Written identification of material defects observed during inspection",1.3
-roof,Roof,InspectionArea,"Roof covering materials gutters downspouts vents flashing skylights chimney",3.1
-exterior,Exterior,InspectionArea,"Exterior wall coverings eaves soffits fascia windows doors",3.2
-foundation,Basement Foundation Crawlspace & Structure,InspectionArea,"Foundation basement crawlspace and structural components",3.3
-heating,Heating,InspectionArea,"Heating system using normal operating controls",3.4
-cooling,Cooling,InspectionArea,"Cooling system using normal operating controls",3.5
-plumbing,Plumbing,InspectionArea,"Water supply fuel supply water heating equipment fixtures",3.6
-electrical,Electrical,InspectionArea,"Service drop conductors panels circuit protection grounding",3.7
-fireplace,Fireplace,InspectionArea,"Fireplaces chimneys lintels damper doors cleanout doors",3.8
-attic,Attic Insulation & Ventilation,InspectionArea,"Insulation and ventilation in unfinished spaces",3.9
-interior,Doors Windows & Interior,InspectionArea,"Doors windows floors walls ceilings stairs railings",3.10
-accessible,Accessible,Term,"Can be approached or entered safely without difficulty fear or danger",
-activate,Activate,Term,"To turn on supply power or enable systems equipment or devices",
-material_defect_term,Material Defect,Term,"Specific issue with significant adverse impact on value or unreasonable risk",
-readily_accessible,Readily Accessible,Term,"Capable of being safely observed without removal of obstacles",
-unsafe,Unsafe,Term,"Condition judged to be significant risk of injury during normal use",
-inspect,Inspect,Term,"To examine readily accessible systems and components safely",
-observe,Observe,Term,"To visually notice",
-operate,Operate,Term,"To cause systems to function or turn on with normal operating controls",
-evaluate,Evaluate,Term,"To assess the systems structures and/or components of a property",
-
-determine,Determine,Term,"To arrive at an opinion or conclusion pursuant to examination"
+id,name,type,description,section_number,last_revised
+document,Home Inspection Standards of Practice,Document,"Home Inspection Standards of Practice - Last revised January 2018",,January 2018
+def_scope,Definitions and Scope,Section,"Section defining home inspection scope and material defects",1,
+limitations,Limitations Exceptions & Exclusions,Section,"Section outlining what inspections do not cover",2,
+standards,Standards of Practice,Section,"Section detailing specific inspection requirements by system",3,
+glossary,Glossary of Terms,Section,"Section containing definitions of technical terms",4,
+home_inspection_def,Home Inspection Definition,Definition,"A home inspection is a non-invasive visual examination of accessible areas",1.1,
+material_defect_def,Material Defect Definition,Definition,"A specific issue that may have significant adverse impact on property value or poses unreasonable risk",1.2,
+inspection_report_def,Inspection Report Definition,Definition,"Written identification of material defects observed during inspection",1.3,
+roof,Roof,InspectionArea,"Roof covering materials gutters downspouts vents flashing skylights chimney",3.1,
+exterior,Exterior,InspectionArea,"Exterior wall coverings eaves soffits fascia windows doors",3.2,
+foundation,Basement Foundation Crawlspace & Structure,InspectionArea,"Foundation basement crawlspace and structural components",3.3,
+heating,Heating,InspectionArea,"Heating system using normal operating controls",3.4,
+cooling,Cooling,InspectionArea,"Cooling system using normal operating controls",3.5,
+plumbing,Plumbing,InspectionArea,"Water supply fuel supply water heating equipment fixtures",3.6,
+electrical,Electrical,InspectionArea,"Service drop conductors panels circuit protection grounding",3.7,
+fireplace,Fireplace,InspectionArea,"Fireplaces chimneys lintels damper doors cleanout doors",3.8,
+attic,Attic Insulation & Ventilation,InspectionArea,"Insulation and ventilation in unfinished spaces",3.9,
+interior,Doors Windows & Interior,InspectionArea,"Doors windows floors walls ceilings stairs railings",3.10,
+accessible,Accessible,Term,"Can be approached or entered safely without difficulty fear or danger",4.1,
+activate,Activate,Term,"To turn on supply power or enable systems equipment or devices",4.2,
+adversely_affect,Adversely Affect,Term,"To constitute or potentially constitute a negative or destructive impact",4.3,
+alarm_system,Alarm System,Term,"Warning devices installed or freestanding including carbon monoxide detectors",4.4,
+appliance,Appliance,Term,"A household device operated by the use of electricity or gas",4.5,
+architectural_service,Architectural Service,Term,"Practice involving art and science of building design for construction",4.6,
+component,Component,Term,"A permanently installed or attached fixture element or part of a system",4.7,
+condition,Condition,Term,"The visible and conspicuous state of being of an object",4.8,
+correction,Correction,Term,"Something that is substituted or proposed for what is incorrect deficient unsafe",4.9,
+cosmetic_defect,Cosmetic Defect,Term,"An irregularity or imperfection which could be corrected but is not required",4.10,
+crawlspace,Crawlspace,Term,"Area within confines of foundation between ground and underside of lowest floor",4.11,
+decorative,Decorative,Term,"Ornamental not required for operation of essential systems or components",4.12,
+describe,Describe,Term,"To report in writing a system or component by its type or observed characteristics",4.13,
+determine,Determine,Term,"To arrive at an opinion or conclusion pursuant to examination",4.14,
+dismantle,Dismantle,Term,"To open take apart or remove any component not typically opened by occupant",4.15,
+engineering_service,Engineering Service,Term,"Professional service requiring engineering education training and experience",4.16,
+enter,Enter,Term,"To go into an area to observe visible components",4.17,
+evaluate,Evaluate,Term,"To assess the systems structures and/or components of a property",4.18,
+evidence,Evidence,Term,"That which tends to prove or disprove something grounds for belief proof",4.19,
+examine,Examine,Term,"To visually look see inspect",4.20,
+foundation,Foundation,Term,"Base upon which structure or wall rests usually masonry concrete or stone",4.21,
+function,Function,Term,"Action for which item component or system exists to perform a task",4.22,
+functional,Functional,Term,"Performing or able to perform a function",4.23,
+functional_defect,Functional Defect,Term,"Lack of abnormality in something necessary for normal proper functioning",4.24,
+home_inspection,Home Inspection,Term,"Process by which inspector visually examines readily accessible systems",4.25,
+household_appliances,Household Appliances,Term,"Kitchen and laundry appliances room air conditioners similar appliances",4.26,
+identify,Identify,Term,"To notice and report",4.27,
+indication,Indication,Term,"That which serves to point out show or make known present existence",4.28,
+inspect,Inspect,Term,"To examine readily accessible systems and components safely",4.29,
+inspected_property,Inspected Property,Term,"Readily accessible areas of home house building components systems",4.30,
+inspection_report,Inspection Report,Term,"Written communication possibly including images of material defects observed",4.31,
+inspector,Inspector,Term,"One who performs a real estate inspection",4.32,
+installed,Installed,Term,"Attached or connected such that installed item requires tool for removal",4.33,
+material_defect_term,Material Defect,Term,"Specific issue with significant adverse impact on value or unreasonable risk",4.34,
+normal_operating_controls,Normal Operating Controls,Term,"Method by which devices can be operated by ordinary occupants",4.35,
+observe,Observe,Term,"To visually notice",4.36,
+operate,Operate,Term,"To cause systems to function or turn on with normal operating controls",4.37,
+readily_accessible,Readily Accessible,Term,"Capable of being safely observed without removal of obstacles",4.38,
+recreational_facilities,Recreational Facilities,Term,"Spas saunas steam baths swimming pools tennis courts playground equipment",4.39,
+report,Report,Term,"To express communicate or provide information in writing",4.40,
+representative_number,Representative Number,Term,"Number sufficient to serve as typical or characteristic example",4.41,
+residential_property,Residential Property,Term,"Four or fewer residential units",4.42,
+residential_unit,Residential Unit,Term,"Home single unit providing complete independent living facilities",4.43,
+safety_glazing,Safety Glazing,Term,"Tempered glass laminated glass or rigid plastic",4.44,
+shut_down,Shut Down,Term,"Turned off unplugged inactive not in service not operational",4.45,
+structural_component,Structural Component,Term,"Component that supports non-variable forces and variable forces",4.46,
+system,System,Term,"An assembly of various components which function as a whole",4.47,
+technically_exhaustive,Technically Exhaustive,Term,"Comprehensive detailed examination beyond scope of real estate home inspection",4.48,
+unsafe,Unsafe,Term,"Condition judged to be significant risk of injury during normal use",4.49,
+verify,Verify,Term,"To confirm or substantiate",4.50
