@@ -1,4 +1,4 @@
-id:ID,inspection_area,requirement_type,description,category:LABEL
+id,inspection_area,requirement_type,description,category
 roof_inspect_1,roof,SHALL_INSPECT,"the roof-covering materials",InspectionRequirement
 roof_inspect_2,roof,SHALL_INSPECT,"the gutters",InspectionRequirement
 roof_inspect_3,roof,SHALL_INSPECT,"the downspouts",InspectionRequirement
@@ -9,11 +9,23 @@ roof_report_1,roof,SHALL_REPORT,"observed indications of active roof leaks",Insp
 roof_not_req_1,roof,NOT_REQUIRED,"walk on any roof surface",InspectionRequirement
 roof_not_req_2,roof,NOT_REQUIRED,"predict the service life expectancy",InspectionRequirement
 roof_not_req_3,roof,NOT_REQUIRED,"inspect underground downspout diverter drainage pipes",InspectionRequirement
+roof_not_req_4,roof,NOT_REQUIRED,"remove snow ice debris or other conditions that prohibit observation",InspectionRequirement
+roof_not_req_5,roof,NOT_REQUIRED,"move insulation",InspectionRequirement
+roof_not_req_6,roof,NOT_REQUIRED,"inspect antennae satellite dishes lightning arresters de-icing equipment",InspectionRequirement
+roof_not_req_7,roof,NOT_REQUIRED,"walk on roof areas that appear unsafe or might cause damage",InspectionRequirement
+roof_not_req_8,roof,NOT_REQUIRED,"perform a water test",InspectionRequirement
+roof_not_req_9,roof,NOT_REQUIRED,"warrant or certify the roof",InspectionRequirement
+roof_not_req_10,roof,NOT_REQUIRED,"confirm proper fastening or installation of roof-covering material",InspectionRequirement
 exterior_inspect_1,exterior,SHALL_INSPECT,"the exterior wall-covering materials",InspectionRequirement
 exterior_inspect_2,exterior,SHALL_INSPECT,"the eaves soffits and fascia",InspectionRequirement
 exterior_inspect_3,exterior,SHALL_INSPECT,"a representative number of windows",InspectionRequirement
 exterior_inspect_4,exterior,SHALL_INSPECT,"all exterior doors",InspectionRequirement
 exterior_inspect_5,exterior,SHALL_INSPECT,"flashing and trim",InspectionRequirement
+exterior_inspect_6,exterior,SHALL_INSPECT,"adjacent walkways and driveways",InspectionRequirement
+exterior_inspect_7,exterior,SHALL_INSPECT,"stairs steps stoops stairways and ramps",InspectionRequirement
+exterior_inspect_8,exterior,SHALL_INSPECT,"porches patios decks balconies and carports",InspectionRequirement
+exterior_inspect_9,exterior,SHALL_INSPECT,"railings guards and handrails",InspectionRequirement
+exterior_inspect_10,exterior,SHALL_INSPECT,"vegetation surface drainage retaining walls grading where they may adversely affect structure",InspectionRequirement
 exterior_describe_1,exterior,SHALL_DESCRIBE,"the type of exterior wall-covering materials",InspectionRequirement
 exterior_report_1,exterior,SHALL_REPORT,"any improper spacing between intermediate balusters spindles and rails",InspectionRequirement
 foundation_inspect_1,foundation,SHALL_INSPECT,"the foundation",InspectionRequirement
@@ -24,7 +36,8 @@ foundation_describe_1,foundation,SHALL_DESCRIBE,"the type of foundation",Inspect
 foundation_describe_2,foundation,SHALL_DESCRIBE,"the location of the access to the under-floor space",InspectionRequirement
 foundation_report_1,foundation,SHALL_REPORT,"observed indications of wood in contact with or near soil",InspectionRequirement
 foundation_report_2,foundation,SHALL_REPORT,"observed indications of active water penetration",InspectionRequirement
-foundation_report_3,foundation,SHALL_REPORT,"observed indications of possible foundation movement",InspectionRequirement
+foundation_report_3,foundation,SHALL_REPORT,"observed indications of possible foundation movement such as sheetrock cracks brick cracks out-of-square door frames unlevel floors",InspectionRequirement
+foundation_report_4,foundation,SHALL_REPORT,"any observed cutting notching boring of framing members that may present structural or safety concern",InspectionRequirement
 heating_inspect_1,heating,SHALL_INSPECT,"the heating system using normal operating controls",InspectionRequirement
 heating_describe_1,heating,SHALL_DESCRIBE,"the location of the thermostat for the heating system",InspectionRequirement
 heating_describe_2,heating,SHALL_DESCRIBE,"the energy source",InspectionRequirement
@@ -38,24 +51,62 @@ cooling_report_1,cooling,SHALL_REPORT,"any cooling system that did not operate",
 cooling_report_2,cooling,SHALL_REPORT,"if the cooling system was deemed inaccessible",InspectionRequirement
 plumbing_inspect_1,plumbing,SHALL_INSPECT,"the main water supply shut-off valve",InspectionRequirement
 plumbing_inspect_2,plumbing,SHALL_INSPECT,"the main fuel supply shut-off valve",InspectionRequirement
-plumbing_inspect_3,plumbing,SHALL_INSPECT,"the water heating equipment including energy source venting connections TPR valves",InspectionRequirement
+plumbing_inspect_3,plumbing,SHALL_INSPECT,"the water heating equipment including energy source venting connections TPR valves Watts 210 valves seismic bracing",InspectionRequirement
 plumbing_inspect_4,plumbing,SHALL_INSPECT,"interior water supply including all fixtures and faucets by running water",InspectionRequirement
+plumbing_inspect_5,plumbing,SHALL_INSPECT,"all toilets for proper operation by flushing",InspectionRequirement
+plumbing_inspect_6,plumbing,SHALL_INSPECT,"all sinks tubs and showers for functional drainage",InspectionRequirement
+plumbing_inspect_7,plumbing,SHALL_INSPECT,"the drain waste and vent system",InspectionRequirement
+plumbing_inspect_8,plumbing,SHALL_INSPECT,"drainage sump pumps with accessible floats",InspectionRequirement
 plumbing_describe_1,plumbing,SHALL_DESCRIBE,"whether the water supply is public or private based upon observed evidence",InspectionRequirement
 plumbing_describe_2,plumbing,SHALL_DESCRIBE,"the location of the main water supply shut-off valve",InspectionRequirement
+plumbing_describe_3,plumbing,SHALL_DESCRIBE,"the location of the main fuel supply shut-off valve",InspectionRequirement
+plumbing_describe_4,plumbing,SHALL_DESCRIBE,"the location of any observed fuel-storage system",InspectionRequirement
+plumbing_describe_5,plumbing,SHALL_DESCRIBE,"the capacity of the water heating equipment if labeled",InspectionRequirement
+plumbing_report_1,plumbing,SHALL_REPORT,"deficiencies in water supply by viewing functional flow in two fixtures operated simultaneously",InspectionRequirement
+plumbing_report_2,plumbing,SHALL_REPORT,"deficiencies in the installation of hot and cold water faucets",InspectionRequirement
+plumbing_report_3,plumbing,SHALL_REPORT,"active plumbing water leaks that were observed during the inspection",InspectionRequirement
+plumbing_report_4,plumbing,SHALL_REPORT,"toilets that were damaged had loose connections to floor were leaking or had tank components that did not operate",InspectionRequirement
 electrical_inspect_1,electrical,SHALL_INSPECT,"the service drop",InspectionRequirement
 electrical_inspect_2,electrical,SHALL_INSPECT,"the overhead service conductors and attachment point",InspectionRequirement
 electrical_inspect_3,electrical,SHALL_INSPECT,"the service head gooseneck and drip loops",InspectionRequirement
-electrical_inspect_4,electrical,SHALL_INSPECT,"panelboards and over-current protection devices",InspectionRequirement
+electrical_inspect_4,electrical,SHALL_INSPECT,"the service mast service conduit and raceway",InspectionRequirement
+electrical_inspect_5,electrical,SHALL_INSPECT,"the electric meter and base",InspectionRequirement
+electrical_inspect_6,electrical,SHALL_INSPECT,"service-entrance conductors",InspectionRequirement
+electrical_inspect_7,electrical,SHALL_INSPECT,"the main service disconnect",InspectionRequirement
+electrical_inspect_8,electrical,SHALL_INSPECT,"panelboards and over-current protection devices circuit breakers and fuses",InspectionRequirement
+electrical_inspect_9,electrical,SHALL_INSPECT,"service grounding and bonding",InspectionRequirement
+electrical_inspect_10,electrical,SHALL_INSPECT,"representative number of switches lighting fixtures receptacles including AFCI-protected using AFCI test button where possible",InspectionRequirement
+electrical_inspect_11,electrical,SHALL_INSPECT,"all GFCI receptacles and circuit breakers using GFCI tester where possible",InspectionRequirement
+electrical_inspect_12,electrical,SHALL_INSPECT,"for the presence of smoke and carbon monoxide detectors",InspectionRequirement
 electrical_describe_1,electrical,SHALL_DESCRIBE,"the main service disconnect amperage rating if labeled",InspectionRequirement
 electrical_describe_2,electrical,SHALL_DESCRIBE,"the type of wiring observed",InspectionRequirement
+electrical_report_1,electrical,SHALL_REPORT,"deficiencies in integrity of service-entrance conductors insulation drip loop vertical clearances from grade and roofs",InspectionRequirement
+electrical_report_2,electrical,SHALL_REPORT,"any unused circuit-breaker panel opening that was not filled",InspectionRequirement
+electrical_report_3,electrical,SHALL_REPORT,"presence of solid conductor aluminum branch-circuit wiring if readily visible",InspectionRequirement
+electrical_report_4,electrical,SHALL_REPORT,"any tested receptacle in which power was not present polarity was incorrect cover was not in place GFCI devices not properly installed or did not operate properly evidence of arcing or excessive heat receptacle not grounded or not secured to wall",InspectionRequirement
+electrical_report_5,electrical,SHALL_REPORT,"the absence of smoke and/or carbon monoxide detectors",InspectionRequirement
 fireplace_inspect_1,fireplace,SHALL_INSPECT,"readily accessible and visible portions of fireplaces and chimneys",InspectionRequirement
 fireplace_inspect_2,fireplace,SHALL_INSPECT,"lintels above the fireplace openings",InspectionRequirement
+fireplace_inspect_3,fireplace,SHALL_INSPECT,"damper doors by opening and closing them if readily accessible and manually operable",InspectionRequirement
+fireplace_inspect_4,fireplace,SHALL_INSPECT,"cleanout doors and frames",InspectionRequirement
 fireplace_describe_1,fireplace,SHALL_DESCRIBE,"the type of fireplace",InspectionRequirement
+fireplace_report_1,fireplace,SHALL_REPORT,"evidence of joint separation damage or deterioration of hearth hearth extension or chambers",InspectionRequirement
+fireplace_report_2,fireplace,SHALL_REPORT,"manually operated dampers that did not open and close",InspectionRequirement
+fireplace_report_3,fireplace,SHALL_REPORT,"the lack of a smoke detector in the same room as the fireplace",InspectionRequirement
+fireplace_report_4,fireplace,SHALL_REPORT,"the lack of a carbon monoxide detector in the same room as the fireplace",InspectionRequirement
+fireplace_report_5,fireplace,SHALL_REPORT,"cleanouts not made of metal pre-cast cement or other non-combustible material",InspectionRequirement
 attic_inspect_1,attic,SHALL_INSPECT,"insulation in unfinished spaces including attics crawlspaces foundation areas",InspectionRequirement
 attic_inspect_2,attic,SHALL_INSPECT,"ventilation of unfinished spaces including attics crawlspaces foundation areas",InspectionRequirement
+attic_inspect_3,attic,SHALL_INSPECT,"mechanical exhaust systems in kitchen bathrooms and laundry area",InspectionRequirement
 attic_describe_1,attic,SHALL_DESCRIBE,"the type of insulation observed",InspectionRequirement
-attic_describe_2,attic,SHALL_DESCRIBE,"approximate average depth of insulation observed at unfinished attic floor",InspectionRequirement
+attic_describe_2,attic,SHALL_DESCRIBE,"approximate average depth of insulation observed at unfinished attic floor area or roof structure",InspectionRequirement
+attic_report_1,attic,SHALL_REPORT,"the general absence of insulation or ventilation in unfinished spaces",InspectionRequirement
 interior_inspect_1,interior,SHALL_INSPECT,"a representative number of doors and windows by opening and closing them",InspectionRequirement
 interior_inspect_2,interior,SHALL_INSPECT,"floors walls and ceilings",InspectionRequirement
 interior_inspect_3,interior,SHALL_INSPECT,"stairs steps landings stairways and ramps",InspectionRequirement
+interior_inspect_4,interior,SHALL_INSPECT,"railings guards and handrails",InspectionRequirement
+interior_inspect_5,interior,SHALL_INSPECT,"garage vehicle doors and operation of garage vehicle door openers using normal operating controls",InspectionRequirement
 interior_describe_1,interior,SHALL_DESCRIBE,"a garage vehicle door as manually-operated or installed with garage door opener",InspectionRequirement
+interior_report_1,interior,SHALL_REPORT,"improper spacing between intermediate balusters spindles and rails for steps stairways guards and railings",InspectionRequirement
+interior_report_2,interior,SHALL_REPORT,"photo-electric safety sensors that did not operate properly",InspectionRequirement
+interior_report_3,interior,SHALL_REPORT,"any window that was obviously fogged or displayed other evidence of broken seals",InspectionRequirement
